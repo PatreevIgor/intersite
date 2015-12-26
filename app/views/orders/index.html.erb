@@ -1,0 +1,61 @@
+
+<div class="art-content-layout">
+  <div class="art-content-layout-row">
+    <div class="art-layout-cell art-content"><article class="art-post art-article">
+      <div class="art-postmetadataheader">
+        <h2 class="art-postheader">Заказы</h2>
+
+      </div>
+      <div class="art-postcontent art-postcontent-0 clearfix">
+
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @orders.each do |order| %>
+            <tr>
+              <td><%= order.title %></td>
+              <td><%= link_to 'Show', order %></td>
+              <td><%= link_to 'Edit', edit_order_path(order) %></td>
+              <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+        <br>
+
+        <%= link_to 'New Order', new_order_path %>
+
+
+      </div>
+
+
+
+    </article></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

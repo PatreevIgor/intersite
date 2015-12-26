@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Intersite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Intersite</title>
+
+
+	<link rel="stylesheet" href="/assets/style.css" media="screen">
+	<link rel="stylesheet" href="/assets/style.responsive.css" media="all">
+	<script src="/assets/jquery.js"></script>
+	<script src="/assets/script.js"></script>
+	<script src="/assets/script.responsive.js"></script>
+	<style>.art-content .art-postcontent-0 .layout-item-0 { color: #4A4A4A; background: #FFFFFF;  border-collapse: separate;  }
+		.art-content .art-postcontent-0 .layout-item-1 { color: #4A4A4A; padding: 20px;  }
+		.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+		.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+	</style>
 </head>
 <body>
+	<div id="art-main">
+		<nav class="art-nav">
+			<div class="art-nav-inner">
+				<ul class="art-hmenu">
+				<li><a href="/" >Главная</a></li>
+					<li><a href="/works">Наши проекты</a></li>
+					<li><a href="/orders">Заказы</a></li>
+					<li><a href="/contacts">Контакты</a></li>
+				</ul> 
+			</div>
+		</nav>
+		<header class="art-header">
+			<div class="art-shapes">
+				<div class="art-object1060158591" data-left="2.35%"></div>
+			</div>
+			<h1 class="art-headline" data-left="21.50%">
+				<a href="/">Бесплатная разработка сайтов</a>
+			</h1>
+			<h2 class="art-slogan" data-left="20.9%">Быстро! Удобно! Качественно!</h2>
+		</header>
+		<div class="art-sheet clearfix">
+			<div class="art-layout-wrapper">
 
-<%= yield %>
+
+
+				<%= yield %>
+
+
+
+
+			</div>
+		</div>
+		<footer class="art-footer">
+			<div class="art-footer-inner">
+				<div class="art-content-layout layout-item-0">
+					<div class="art-content-layout-row">
+						<div class="art-layout-cell layout-item-1" style="width: 20%">
+							<h3>Информация</h3><br><ul><li>ИП Патреев И.И.</li><li>УНП 691751618</li><li>Телефоны:&nbsp;</li><li>+37529 7379222 (МТС)</li><li>+37529 3319156 (Velcom)</li></ul>
+						</div><div class="art-layout-cell layout-item-2" style="width: 20%">
+						<h3>Расположение</h3><br><ul><li>Минский район, п.Лесной</li><li>ул.Александрова, 6, кв.102</li><li>Индекс: 223040</li></ul>
+					</div><div class="art-layout-cell layout-item-2" style="width: 25%">
+					<h3>Время работы</h3><p></p><ul><li>В будние дни с 8:00 до 19:00</li><li>В выходные дни с 9:00 до 19:00</li></ul><div style="margin-left: 2em"></div>
+				</div>
+				<div class="art-layout-cell layout-item-3" style="width: 35%">
+					<p style="text-align: justify;"><img width="98" height="98" alt=""  src="/assets/vibor-fobro.png">&nbsp;&nbsp;&nbsp;<img width="129" height="95" alt=""  src="/assets/quality-assurance.png">&nbsp;&nbsp;&nbsp;<img width="105" height="105" alt=""  src="/assets/ac7e5b54fd250efba8475ff0635be93f.png"><br></p>
+				</div>
+			</div>
+		</div>
+		<div class="art-content-layout">
+			<div class="art-content-layout-row">
+				<div class="art-layout-cell" style="width: 100%">
+					<p style="text-align: center;"><span style="color: rgb(252, 226, 182); line-height: 16px; text-align: left;">Минск, 2015 г.</span><br></p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</footer>
+
+</div>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
