@@ -31,5 +31,5 @@ production:
   database: patreewi_inter86
   username: patreewi_inter86
   password: Zrj4lhrZXgN
-  host: mysql6.locum.ru
+  host: mysql0.locum.ru
   socket: /var/run/mysqld/mysqld.sock
