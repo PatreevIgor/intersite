@@ -1,6 +1,15 @@
 source 'https://rubygems.org'
 
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+gem 'capistrano-rvm'
+gem 'unicorn'
 
+gem 'non-stupid-digest-assets', '~> 1.0.4'
+
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record

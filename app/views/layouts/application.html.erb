@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Intersite</title>
-	
+
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 	<link rel="stylesheet" href="/assets/style.css" media="screen">
@@ -20,11 +20,29 @@
 	<div id="art-main">
 		<nav class="art-nav">
 			<div class="art-nav-inner">
+
+
+
+
+
+
 				<ul class="art-hmenu">
+
+
 					<li><a href="/" >Главная</a></li>
 					<li><a href="/works">Наши проекты</a></li>
 					<li><a href="/orders">Заказы</a></li>
 					<li><a href="/contacts">Контакты</a></li>
+					
+						<% if user_signed_in? %>
+						<li><%= link_to 'Редактировать профиль', edit_user_registration_path %></li>
+
+						<li><%= link_to "Выход", destroy_user_session_path, method: :delete %></li>
+						<% else %>
+						<li><%= link_to "Регистрация", new_user_registration_path  %> </li>
+						<li><%= link_to "Авторизация", new_user_session_path  %></li>
+						<% end %>
+					
 				</ul> 
 			</div>
 		</nav>
