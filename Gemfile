@@ -12,7 +12,7 @@ gem 'non-stupid-digest-assets', '~> 1.0.4'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
+# # Use sqlite3 as the database for Active Record
 gem 'mysql2', '~> 0.3.18'
 # gem 'sqlite3'
 # Use SCSS for stylesheets
