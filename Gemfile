@@ -8,7 +8,7 @@ gem 'capistrano-rvm'
 gem 'unicorn'
 
 gem 'non-stupid-digest-assets', '~> 1.0.4'
-gem 'devise-bootstrap-views'
+# gem 'devise-bootstrap-views'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
