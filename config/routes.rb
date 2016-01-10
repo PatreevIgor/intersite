@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'works' => 'home#works'
   get 'contacts' => 'home#contacts'
+  get 'dogovor' => 'home#dogovor'
+
+
+  
   resources :orders
 
   # The priority is based upon order of creation: first created -> highest priority.

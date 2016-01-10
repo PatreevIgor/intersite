@@ -9,6 +9,8 @@ class HomeController < ApplicationController
   def contacts
   end
 
+  def dogovor
+  end
 
    private
     # Use callbacks to share common setup or constraints between actions.
